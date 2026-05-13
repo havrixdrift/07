@@ -351,7 +351,7 @@ layout: null
                     {% endif %}
                     <div class="popular-content">
                         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                        <p>{{ post.description | truncate: 80 }}</p>
+                        <p>{{ post.description }}</p>
                         {% assign before_svg = post.content | split: '<p>' | first %}
                         <div class="excerpt spo">{{ before_svg }}</div>
                     </div>
